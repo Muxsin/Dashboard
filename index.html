@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper flex-row">
+        <div class="sidebar">
+            <nav class="navbar">
+                <div class="navbar-brand-box flex-row">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <h1 class="navbar-brand">Kodnavis inc.</h1>
+                </div>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="#" class="nav-item"><i class="fa fa-columns" aria-hidden="true"></i></i> <span>Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">
+                            <i class="fa fa-users" aria-hidden="true"></i> <span>Clients</span><span class="new-msgs">8</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>Baskets</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span>Billing</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item"><i class="fa fa-archive" aria-hidden="true"></i> <span>Products</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item"><i class="fa fa-life-ring" aria-hidden="true"></i> <span>Support</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item"><i class="fa fa-cog" aria-hidden="true"></i> <span>Setting</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="account-information">
+                    <img src="img/man.jpg" alt="me" class="me">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="copyright">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <p>Powered by <span>Company</span></p>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <h1>FILTERS</h1>
+            <details class="tags-details" open>
+                <summary>
+                    <h2>Tag</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <div class="tag item-style">
+                    <p>Equals</p>
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </details>
+            <hr>
+            <details class="email-details" open>
+                <summary>
+                    <h2>Email</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <select name="email-selector" id="email-selector" class="email-selector">
+                    <option value="contains">Contains</option>
+                    <option value="">Email</option>
+                </select>
+                <input type="email" name="email-field" class="email-field" id="email-field" placeholder="Add Email">
+            </details>
+            <hr>
+            <details class="firstname-details" open>
+                <summary>
+                    <h2>First Name</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <div class="firstname item-style">
+                    <p>Starts with: <span>Emy</span></p>
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </details>
+            <hr>
+            <details class="lastname-details" open>
+                <summary>
+                    <h2>Last Name</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <div class="lastname item-style">
+                    <p>Starts with: <span>Jackson</span></p>
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </details>
+            <hr>
+            <details class="created-details" open>
+                <summary>
+                    <h2>Created</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <div class="created item-style">
+                    <p>Created less than: <span>14-10-2019</span></p>
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </details>
+            <hr>
+            <details class="clientId-details">
+                <summary>
+                    <h2>Client ID</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <p class="clientId item-style">12</p>
+            </details>
+            <hr>
+            <details class="verification-details" open>
+                <summary>
+                    <h2>Verification</h2>
+                    <img src="img/sortdown.png" alt="sortdown-icon" class="sortdown-icon">
+                </summary>
+                <div class="verification-item">
+                    <input type="checkbox" name="verified" id="verified" class="verified">
+                    <label for="verified">Verified</label>
+                </div>
+                <div class="verification-item">
+                    <input type="checkbox" name="not-verified" id="not-verified" class="not-verified">
+                    <label for="not-verified">Not Verified</label>
+                </div>
+            </details>
+            <button class="apply-btn btn-blue">Apply</button>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="contnet-navbar">
+                <h1>Clients</h1>
+                <div>
+                    <div class="fa-download-box">
+                        <i class="fa fa-download"></i>
+                    </div>
+                    <button class="add-client-btn btn-blue">+ Add Client</button>
+                </div>
+            </div>
+
+            <div class="content-menu">
+                <div>
+                    <a href="#" class="menu-item"><i class="fa fa-eye" aria-hidden="true"></i> Overview</a>
+                </div>
+                <div>
+                    <a href="#" class="menu-item"><i class="fa fa-list-alt" aria-hidden="true"></i> List View</a>
+                </div>
+                <div>
+                    <a href="#" class="menu-item"><i class="fa fa-th-large" aria-hidden="true"></i> Segment</a>
+                </div>
+            </div>
+
+            <div class="clients-list">
+                <div class="clients-list-col">
+                    <p class="clients-list-row-client">CLIENT</p>
+                    <p class="clients-list-row-tags">TAGS</p>
+                    <p class="clients-list-row-created">CREATED</p>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="blue-tag">VIP Client</p>
+                        <p class="pink-tag">Early Adopted</p>
+                        <p class="green-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="blue-tag">VIP Client</p>
+                        <p class="pink-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="green-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="blue-tag">VIP Client</p>
+                        <p class="pink-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="green-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="green-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+                <div class="clients-list-col">
+                    <div class="client-info">
+                        <img src="img/man.jpg" alt="man" width="54px" height="54px">
+                        <div>
+                            <p class="client-name">Emy Jackson</p>
+                            <p class="client-email">emy_jac@upmind.com</p>
+                        </div>
+                    </div>
+                    <div class="clients-list-tags">
+                        <p class="green-tag">Early Adopted</p>
+                        <p class="orange-tag">Early Adopted</p>
+                    </div>
+                    <div lang="clients-list-created">
+                        <p>24/05/2019</p>
+                    </div>
+                    <div class="clients-list-sortright">
+                        <p>></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="per-page-box">
+                <div class="per-page">
+                    <p>Rows per page</p>
+                    <select name="per-page-selector" id="per-page-selector" class="per-page-selector">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+                    <p>out of <span id="clients-total"></span></p>
+                </div>
+                <div class="pages-box">
+                    <button class="previous-page-btn"><</button>
+                    <p><b>1</b></p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>...</p>
+                    <p>15</p>
+                    <p>16</p>
+                    <button class="next-page-btn">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
